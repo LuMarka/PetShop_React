@@ -15,7 +15,7 @@ import { buscar } from "../api/api"
         buscar(`/posts/${id}`, setPost).catch(() => {
             navigate("/not-found")
         })
-    }, [id])
+    }, [id, navigate])
 
     return(
       <main className = "container flex flex--center">
